@@ -79,8 +79,8 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
-    <IncludePath>$(SolutionDir)LowLevelManager_v1\lib\distorm3-3.4.1\src;$(SolutionDir)LowLevelManager_v1\lib\distorm3-3.4.1\include;$(SolutionDir)LowLevelManager_v1\lib\src;$(IncludePath)</IncludePath>
-    <SourcePath>$(SolutionDir)LowLevelManager_v1\lib\src\asmjit;$(SolutionDir)LowLevelManager_v1\lib\distorm3-3.4.1\src;$(SourcePath)</SourcePath>
+    <IncludePath>$(SolutionDir)LowLevelManager_v1\lib\distorm3-3.4.1\src;$(SolutionDir)LowLevelManager_v1\lib\distorm3-3.4.1\include;$(SolutionDir)LowLevelManager_v1\lib\src;$(SolutionDir)LowLevelManager_v1\Form;$(SolutionDir)LowLevelManager_v1;$(IncludePath)</IncludePath>
+    <SourcePath>$(SolutionDir)LowLevelManager_v1\lib\src\asmjit;$(SolutionDir)LowLevelManager_v1\lib\distorm3-3.4.1\src;$(SolutionDir)LowLevelManager_v1\Form;$(SolutionDir)LowLevelManager_v1;$(SourcePath)</SourcePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
@@ -103,7 +103,7 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>$(SolutionDir)LowLevelManager_v1\lib\src;$(SolutionDir)LowLevelManager_v1\lib\src\asmjit;$(SolutionDir)LowLevelManager_v1\lib\src\asmtk;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)LowLevelManager_v1\lib\src;$(SolutionDir)LowLevelManager_v1\lib\src\asmjit;$(SolutionDir)LowLevelManager_v1\lib\src\asmtk;$(SolutionDir)LowLevelManager_v1\Form;$(SolutionDir)LowLevelManager_v1;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AdditionalUsingDirectories>%(AdditionalUsingDirectories)</AdditionalUsingDirectories>
     </ClCompile>
     <Link>
@@ -145,70 +145,84 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Assembler.cpp" />
-    <ClCompile Include="AssemblerInstruction.cpp" />
-    <ClCompile Include="BaseForm.cpp" />
-    <ClCompile Include="CallFunctionController.cpp" />
-    <ClCompile Include="CallFunctionForm.cpp" />
-    <ClCompile Include="Disassembler.cpp" />
-    <ClCompile Include="InfoForm.cpp" />
-    <ClCompile Include="InformationForm.cpp" />
-    <ClCompile Include="InformationProcessController.cpp" />
-    <ClCompile Include="Injector.cpp" />
-    <ClCompile Include="InjectShellcode.cpp" />
-    <ClCompile Include="InjectShellcodeController.cpp" />
-    <ClCompile Include="InjectShellcodeForm.cpp" />
-    <ClCompile Include="JumpForm.cpp" />
+    <ClCompile Include="Assembler\Assembler.cpp" />
+    <ClCompile Include="Assembler\AssemblerInstruction.cpp" />
+    <ClCompile Include="Controller\CallFunctionController.cpp" />
+    <ClCompile Include="Controller\InformationProcessController.cpp" />
+    <ClCompile Include="Controller\InjectShellcodeController.cpp" />
+    <ClCompile Include="Controller\MainController.cpp" />
+    <ClCompile Include="Controller\OpenProcessController.cpp" />
+    <ClCompile Include="Controller\RecognizeFunctionController.cpp" />
+    <ClCompile Include="Controller\SearchSignatureController.cpp" />
+    <ClCompile Include="Disassembler\Disassembler.cpp" />
+    <ClCompile Include="Form\BaseForm.cpp" />
+    <ClCompile Include="Form\CallFunctionForm.cpp" />
+    <ClCompile Include="Form\InfoForm.cpp" />
+    <ClCompile Include="Form\InformationForm.cpp" />
+    <ClCompile Include="Form\InjectShellcodeForm.cpp" />
+    <ClCompile Include="Form\JumpForm.cpp" />
+    <ClCompile Include="Form\MainForm.cpp" />
+    <ClCompile Include="Form\OpenProcessForm.cpp" />
+    <ClCompile Include="Form\RecognizeFunctionForm.cpp" />
+    <ClCompile Include="Form\SearchingForm.cpp" />
     <ClCompile Include="lib\src\asmtk\asmparser.cpp" />
     <ClCompile Include="lib\src\asmtk\asmtokenizer.cpp" />
-    <ClCompile Include="MainController.cpp" />
-    <ClCompile Include="MainForm.cpp" />
-    <ClCompile Include="MnemonicsX64.cpp" />
-    <ClCompile Include="OpenProcessController.cpp" />
-    <ClCompile Include="OpenProcessForm.cpp" />
-    <ClCompile Include="PEreader.cpp" />
-    <ClCompile Include="PEWrite.cpp" />
-    <ClCompile Include="pe_hdrs_helper.cpp" />
-    <ClCompile Include="ProcessFunction.cpp" />
-    <ClCompile Include="ProcessFunctionCaller.cpp" />
-    <ClCompile Include="ProcessFunctionConvention.cpp" />
-    <ClCompile Include="ProcessFunctionDAO.cpp" />
-    <ClCompile Include="ProcessFunctionReturnedValue.cpp" />
-    <ClCompile Include="ProcessFunctionStackFrame.cpp" />
-    <ClCompile Include="ProcessInfo.cpp" />
-    <ClCompile Include="ProcessInstructionReader.cpp" />
-    <ClCompile Include="RecognizeFunctionController.cpp" />
-    <ClCompile Include="RecognizeFunctionForm.cpp" />
-    <ClCompile Include="SearchingForm.cpp" />
-    <ClCompile Include="SearchSignature.cpp" />
-    <ClCompile Include="SearchSignatureController.cpp" />
-    <ClCompile Include="TextConverter.cpp" />
+    <ClCompile Include="ProcessDataAccess\ProcessFunctionDAO.cpp" />
+    <ClCompile Include="ProcessDataAccess\ProcessInstructionReader.cpp" />
+    <ClCompile Include="ProcessModel\ProcessFunction.cpp" />
+    <ClCompile Include="ProcessModel\ProcessFunctionCaller.cpp" />
+    <ClCompile Include="ProcessModel\ProcessFunctionConvention.cpp" />
+    <ClCompile Include="ProcessModel\ProcessFunctionReturnedValue.cpp" />
+    <ClCompile Include="ProcessModel\ProcessFunctionStackFrame.cpp" />
+    <ClCompile Include="Service\Injector.cpp" />
+    <ClCompile Include="Service\InjectShellcode.cpp" />
+    <ClCompile Include="Service\MnemonicsX64.cpp" />
+    <ClCompile Include="Service\PEreader.cpp" />
+    <ClCompile Include="Service\PEWrite.cpp" />
+    <ClCompile Include="Service\pe_hdrs_helper.cpp" />
+    <ClCompile Include="Service\ProcessInfo.cpp" />
+    <ClCompile Include="Service\SearchSignature.cpp" />
+    <ClCompile Include="Service\TextConverter.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Assembler.h" />
-    <ClInclude Include="AssemblerInstruction.h" />
-    <ClInclude Include="BaseForm.h">
+    <ClInclude Include="Assembler\Assembler.h" />
+    <ClInclude Include="Assembler\AssemblerInstruction.h" />
+    <ClInclude Include="Controller\CallFunctionController.h" />
+    <ClInclude Include="Controller\InformationProcessController.h" />
+    <ClInclude Include="Controller\InjectShellcodeController.h" />
+    <ClInclude Include="Controller\MainController.h" />
+    <ClInclude Include="Controller\OpenProcessController.h" />
+    <ClInclude Include="Controller\RecognizeFunctionController.h" />
+    <ClInclude Include="Controller\SearchSignatureController.h" />
+    <ClInclude Include="Disassembler\Disassembler.h" />
+    <ClInclude Include="Form\BaseForm.h">
       <FileType>CppForm</FileType>
     </ClInclude>
-    <ClInclude Include="CallFunctionController.h" />
-    <ClInclude Include="CallFunctionForm.h">
+    <ClInclude Include="Form\CallFunctionForm.h">
       <FileType>CppForm</FileType>
     </ClInclude>
-    <ClInclude Include="Disassembler.h" />
-    <ClInclude Include="InfoForm.h">
+    <ClInclude Include="Form\InfoForm.h">
       <FileType>CppForm</FileType>
     </ClInclude>
-    <ClInclude Include="InformationForm.h">
+    <ClInclude Include="Form\InformationForm.h">
       <FileType>CppForm</FileType>
     </ClInclude>
-    <ClInclude Include="InformationProcessController.h" />
-    <ClInclude Include="Injector.h" />
-    <ClInclude Include="InjectShellcode.h" />
-    <ClInclude Include="InjectShellcodeController.h" />
-    <ClInclude Include="InjectShellcodeForm.h">
+    <ClInclude Include="Form\InjectShellcodeForm.h">
       <FileType>CppForm</FileType>
     </ClInclude>
-    <ClInclude Include="JumpForm.h">
+    <ClInclude Include="Form\JumpForm.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="Form\MainForm.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="Form\OpenProcessForm.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="Form\RecognizeFunctionForm.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="Form\SearchingForm.h">
       <FileType>CppForm</FileType>
     </ClInclude>
     <ClInclude Include="lib\src\asmtk\asmparser.h" />
@@ -218,68 +232,64 @@
     <ClInclude Include="lib\src\asmtk\globals.h" />
     <ClInclude Include="lib\src\asmtk\parserutils.h" />
     <ClInclude Include="lib\src\asmtk\strtod.h" />
-    <ClInclude Include="MainController.h" />
-    <ClInclude Include="MainForm.h">
-      <FileType>CppForm</FileType>
-    </ClInclude>
-    <ClInclude Include="MnemonicsX64.h" />
     <ClInclude Include="ntddk.h" />
-    <ClInclude Include="OpenProcessController.h" />
-    <ClInclude Include="OpenProcessForm.h">
-      <FileType>CppForm</FileType>
-    </ClInclude>
-    <ClInclude Include="PEreader.h" />
-    <ClInclude Include="PEWrite.h" />
-    <ClInclude Include="pe_hdrs_helper.h" />
-    <ClInclude Include="ProcessFunction.h" />
-    <ClInclude Include="ProcessFunctionCaller.h" />
-    <ClInclude Include="ProcessFunctionConvention.h" />
-    <ClInclude Include="ProcessFunctionDAO.h" />
-    <ClInclude Include="ProcessFunctionReturnedValue.h" />
-    <ClInclude Include="ProcessFunctionStackFrame.h" />
-    <ClInclude Include="ProcessInfo.h" />
-    <ClInclude Include="ProcessInstructionReader.h" />
-    <ClInclude Include="RecognizeFunctionController.h" />
-    <ClInclude Include="RecognizeFunctionForm.h">
-      <FileType>CppForm</FileType>
-    </ClInclude>
-    <ClInclude Include="SearchingForm.h">
-      <FileType>CppForm</FileType>
-    </ClInclude>
-    <ClInclude Include="SearchSignature.h" />
-    <ClInclude Include="SearchSignatureController.h" />
-    <ClInclude Include="TextConverter.h" />
+    <ClInclude Include="ProcessDataAccess\ProcessFunctionDAO.h" />
+    <ClInclude Include="ProcessDataAccess\ProcessInstructionReader.h" />
+    <ClInclude Include="ProcessModel\ProcessFunction.h" />
+    <ClInclude Include="ProcessModel\ProcessFunctionCaller.h" />
+    <ClInclude Include="ProcessModel\ProcessFunctionConvention.h" />
+    <ClInclude Include="ProcessModel\ProcessFunctionReturnedValue.h" />
+    <ClInclude Include="ProcessModel\ProcessFunctionStackFrame.h" />
+    <ClInclude Include="Service\Injector.h" />
+    <ClInclude Include="Service\InjectShellcode.h" />
+    <ClInclude Include="Service\MnemonicsX64.h" />
+    <ClInclude Include="Service\PEreader.h" />
+    <ClInclude Include="Service\PEWrite.h" />
+    <ClInclude Include="Service\pe_hdrs_helper.h" />
+    <ClInclude Include="Service\ProcessInfo.h" />
+    <ClInclude Include="Service\SearchSignature.h" />
+    <ClInclude Include="Service\TextConverter.h" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="CallFunctionForm.resx">
-      <DependentUpon>CallFunctionForm.h</DependentUpon>
+    <EmbeddedResource Include="Form\CallFunctionForm.resx">
+      <DependentUpon>Form\CallFunctionForm.h</DependentUpon>
+      <LogicalName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(RootNamespace).%(Filename).resources</LogicalName>
     </EmbeddedResource>
-    <EmbeddedResource Include="InfoForm.resx">
-      <DependentUpon>InfoForm.h</DependentUpon>
+    <EmbeddedResource Include="Form\InfoForm.resx">
+      <DependentUpon>Form\InfoForm.h</DependentUpon>
+      <LogicalName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(RootNamespace).%(Filename).resources</LogicalName>
     </EmbeddedResource>
-    <EmbeddedResource Include="InformationForm.resx">
-      <DependentUpon>InformationForm.h</DependentUpon>
+    <EmbeddedResource Include="Form\InformationForm.resx">
+      <DependentUpon>Form\InformationForm.h</DependentUpon>
+      <LogicalName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(RootNamespace).%(Filename).resources</LogicalName>
     </EmbeddedResource>
-    <EmbeddedResource Include="InjectShellcodeForm.resx">
-      <DependentUpon>InjectShellcodeForm.h</DependentUpon>
+    <EmbeddedResource Include="Form\InjectShellcodeForm.resx">
+      <DependentUpon>Form\InjectShellcodeForm.h</DependentUpon>
+      <LogicalName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(RootNamespace).%(Filename).resources</LogicalName>
     </EmbeddedResource>
-    <EmbeddedResource Include="JumpForm.resx">
-      <DependentUpon>JumpForm.h</DependentUpon>
+    <EmbeddedResource Include="Form\JumpForm.resx">
+      <DependentUpon>Form\JumpForm.h</DependentUpon>
+      <LogicalName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(RootNamespace).%(Filename).resources</LogicalName>
     </EmbeddedResource>
-    <EmbeddedResource Include="MainForm.resx">
-      <DependentUpon>MainForm.h</DependentUpon>
+    <EmbeddedResource Include="Form\MainForm.resx">
+      <DependentUpon>Form\MainForm.h</DependentUpon>
+      <LogicalName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(RootNamespace).%(Filename).resources</LogicalName>
     </EmbeddedResource>
-    <EmbeddedResource Include="OpenProcessForm.resx">
-      <DependentUpon>OpenProcessForm.h</DependentUpon>
+    <EmbeddedResource Include="Form\OpenProcessForm.resx">
+      <DependentUpon>Form\OpenProcessForm.h</DependentUpon>
+      <LogicalName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(RootNamespace).%(Filename).resources</LogicalName>
     </EmbeddedResource>
-    <EmbeddedResource Include="RecognizeFunctionForm.resx">
-      <DependentUpon>RecognizeFunctionForm.h</DependentUpon>
+    <EmbeddedResource Include="Form\RecognizeFunctionForm.resx">
+      <DependentUpon>Form\RecognizeFunctionForm.h</DependentUpon>
+      <LogicalName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(RootNamespace).%(Filename).resources</LogicalName>
     </EmbeddedResource>
-    <EmbeddedResource Include="SearchingForm.resx">
-      <DependentUpon>SearchingForm.h</DependentUpon>
+    <EmbeddedResource Include="Form\SearchingForm.resx">
+      <DependentUpon>Form\SearchingForm.h</DependentUpon>
+      <LogicalName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(RootNamespace).%(Filename).resources</LogicalName>
     </EmbeddedResource>
   </ItemGroup>
-
+  <ItemGroup>
+    <Image Include="Image1.bmp" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
-    
 </Project>

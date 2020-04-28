@@ -60,104 +60,8 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="MainForm.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="ntddk.h">
       <Filter>Header Files\Service</Filter>
-    </ClInclude>
-    <ClInclude Include="pe_hdrs_helper.h">
-      <Filter>Header Files\Service</Filter>
-    </ClInclude>
-    <ClInclude Include="Injector.h">
-      <Filter>Header Files\Service</Filter>
-    </ClInclude>
-    <ClInclude Include="PEreader.h">
-      <Filter>Header Files\Service</Filter>
-    </ClInclude>
-    <ClInclude Include="ProcessInfo.h">
-      <Filter>Header Files\Service</Filter>
-    </ClInclude>
-    <ClInclude Include="PEWrite.h">
-      <Filter>Header Files\Service</Filter>
-    </ClInclude>
-    <ClInclude Include="MainController.h">
-      <Filter>Header Files\Controller</Filter>
-    </ClInclude>
-    <ClInclude Include="OpenProcessForm.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="OpenProcessController.h">
-      <Filter>Header Files\Controller</Filter>
-    </ClInclude>
-    <ClInclude Include="InformationForm.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="BaseForm.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="InformationProcessController.h">
-      <Filter>Header Files\Controller</Filter>
-    </ClInclude>
-    <ClInclude Include="InjectShellcodeForm.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="InjectShellcodeController.h">
-      <Filter>Header Files\Controller</Filter>
-    </ClInclude>
-    <ClInclude Include="TextConverter.h">
-      <Filter>Header Files\Service</Filter>
-    </ClInclude>
-    <ClInclude Include="Disassembler.h">
-      <Filter>Header Files\Disassembler</Filter>
-    </ClInclude>
-    <ClInclude Include="JumpForm.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="SearchingForm.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="SearchSignature.h">
-      <Filter>Header Files\Service</Filter>
-    </ClInclude>
-    <ClInclude Include="SearchSignatureController.h">
-      <Filter>Header Files\Controller</Filter>
-    </ClInclude>
-    <ClInclude Include="InjectShellcode.h">
-      <Filter>Header Files\Service</Filter>
-    </ClInclude>
-    <ClInclude Include="ProcessFunction.h">
-      <Filter>Header Files\ProcessModel</Filter>
-    </ClInclude>
-    <ClInclude Include="ProcessFunctionDAO.h">
-      <Filter>Header Files\ProcessDataAccess</Filter>
-    </ClInclude>
-    <ClInclude Include="RecognizeFunctionForm.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="RecognizeFunctionController.h">
-      <Filter>Header Files\Controller</Filter>
-    </ClInclude>
-    <ClInclude Include="ProcessFunctionStackFrame.h">
-      <Filter>Header Files\ProcessModel</Filter>
-    </ClInclude>
-    <ClInclude Include="MnemonicsX64.h">
-      <Filter>Header Files\Service</Filter>
-    </ClInclude>
-    <ClInclude Include="CallFunctionForm.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="CallFunctionController.h">
-      <Filter>Header Files\Controller</Filter>
-    </ClInclude>
-    <ClInclude Include="ProcessFunctionConvention.h">
-      <Filter>Header Files\ProcessModel</Filter>
-    </ClInclude>
-    <ClInclude Include="ProcessFunctionReturnedValue.h">
-      <Filter>Header Files\ProcessModel</Filter>
-    </ClInclude>
-    <ClInclude Include="Assembler.h">
-      <Filter>Header Files\Assembler</Filter>
     </ClInclude>
     <ClInclude Include="lib\src\asmtk\asmparser.h">
       <Filter>Source Files\asmtk</Filter>
@@ -180,136 +84,234 @@
     <ClInclude Include="lib\src\asmtk\strtod.h">
       <Filter>Source Files\asmtk</Filter>
     </ClInclude>
-    <ClInclude Include="ProcessFunctionCaller.h">
-      <Filter>Header Files\ProcessModel</Filter>
+    <ClInclude Include="Assembler\Assembler.h">
+      <Filter>Header Files\Assembler</Filter>
     </ClInclude>
-    <ClInclude Include="ProcessInstructionReader.h">
-      <Filter>Header Files\ProcessDataAccess</Filter>
+    <ClInclude Include="Assembler\AssemblerInstruction.h">
+      <Filter>Header Files\Assembler</Filter>
     </ClInclude>
-    <ClInclude Include="AssemblerInstruction.h">
+    <ClInclude Include="Disassembler\Disassembler.h">
       <Filter>Header Files\Disassembler</Filter>
     </ClInclude>
-    <ClInclude Include="InfoForm.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="Controller\CallFunctionController.h">
+      <Filter>Header Files\Controller</Filter>
+    </ClInclude>
+    <ClInclude Include="Controller\InformationProcessController.h">
+      <Filter>Header Files\Controller</Filter>
+    </ClInclude>
+    <ClInclude Include="Controller\InjectShellcodeController.h">
+      <Filter>Header Files\Controller</Filter>
+    </ClInclude>
+    <ClInclude Include="Controller\MainController.h">
+      <Filter>Header Files\Controller</Filter>
+    </ClInclude>
+    <ClInclude Include="Controller\OpenProcessController.h">
+      <Filter>Header Files\Controller</Filter>
+    </ClInclude>
+    <ClInclude Include="Controller\RecognizeFunctionController.h">
+      <Filter>Header Files\Controller</Filter>
+    </ClInclude>
+    <ClInclude Include="Controller\SearchSignatureController.h">
+      <Filter>Header Files\Controller</Filter>
+    </ClInclude>
+    <ClInclude Include="ProcessDataAccess\ProcessFunctionDAO.h">
+      <Filter>Header Files\ProcessDataAccess</Filter>
+    </ClInclude>
+    <ClInclude Include="ProcessDataAccess\ProcessInstructionReader.h">
+      <Filter>Header Files\ProcessDataAccess</Filter>
+    </ClInclude>
+    <ClInclude Include="ProcessModel\ProcessFunction.h">
+      <Filter>Header Files\ProcessModel</Filter>
+    </ClInclude>
+    <ClInclude Include="ProcessModel\ProcessFunctionCaller.h">
+      <Filter>Header Files\ProcessModel</Filter>
+    </ClInclude>
+    <ClInclude Include="ProcessModel\ProcessFunctionConvention.h">
+      <Filter>Header Files\ProcessModel</Filter>
+    </ClInclude>
+    <ClInclude Include="ProcessModel\ProcessFunctionReturnedValue.h">
+      <Filter>Header Files\ProcessModel</Filter>
+    </ClInclude>
+    <ClInclude Include="ProcessModel\ProcessFunctionStackFrame.h">
+      <Filter>Header Files\ProcessModel</Filter>
+    </ClInclude>
+    <ClInclude Include="Service\Injector.h">
+      <Filter>Header Files\Service</Filter>
+    </ClInclude>
+    <ClInclude Include="Service\InjectShellcode.h">
+      <Filter>Header Files\Service</Filter>
+    </ClInclude>
+    <ClInclude Include="Service\MnemonicsX64.h">
+      <Filter>Header Files\Service</Filter>
+    </ClInclude>
+    <ClInclude Include="Service\pe_hdrs_helper.h">
+      <Filter>Header Files\Service</Filter>
+    </ClInclude>
+    <ClInclude Include="Service\PEreader.h">
+      <Filter>Header Files\Service</Filter>
+    </ClInclude>
+    <ClInclude Include="Service\PEWrite.h">
+      <Filter>Header Files\Service</Filter>
+    </ClInclude>
+    <ClInclude Include="Service\ProcessInfo.h">
+      <Filter>Header Files\Service</Filter>
+    </ClInclude>
+    <ClInclude Include="Service\SearchSignature.h">
+      <Filter>Header Files\Service</Filter>
+    </ClInclude>
+    <ClInclude Include="Service\TextConverter.h">
+      <Filter>Header Files\Service</Filter>
+    </ClInclude>
+    <ClInclude Include="Form\BaseForm.h">
+      <Filter>Header Files\View</Filter>
+    </ClInclude>
+    <ClInclude Include="Form\CallFunctionForm.h">
+      <Filter>Header Files\View</Filter>
+    </ClInclude>
+    <ClInclude Include="Form\InfoForm.h">
+      <Filter>Header Files\View</Filter>
+    </ClInclude>
+    <ClInclude Include="Form\InformationForm.h">
+      <Filter>Header Files\View</Filter>
+    </ClInclude>
+    <ClInclude Include="Form\InjectShellcodeForm.h">
+      <Filter>Header Files\View</Filter>
+    </ClInclude>
+    <ClInclude Include="Form\JumpForm.h">
+      <Filter>Header Files\View</Filter>
+    </ClInclude>
+    <ClInclude Include="Form\MainForm.h">
+      <Filter>Header Files\View</Filter>
+    </ClInclude>
+    <ClInclude Include="Form\OpenProcessForm.h">
+      <Filter>Header Files\View</Filter>
+    </ClInclude>
+    <ClInclude Include="Form\RecognizeFunctionForm.h">
+      <Filter>Header Files\View</Filter>
+    </ClInclude>
+    <ClInclude Include="Form\SearchingForm.h">
+      <Filter>Header Files\View</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="MainForm.cpp">
-      <Filter>Source Files\View</Filter>
-    </ClCompile>
-    <ClCompile Include="pe_hdrs_helper.cpp">
-      <Filter>Source Files\Service</Filter>
-    </ClCompile>
-    <ClCompile Include="Injector.cpp">
-      <Filter>Source Files\Service</Filter>
-    </ClCompile>
-    <ClCompile Include="PEWrite.cpp">
-      <Filter>Source Files\Service</Filter>
-    </ClCompile>
-    <ClCompile Include="PEreader.cpp">
-      <Filter>Source Files\Service</Filter>
-    </ClCompile>
-    <ClCompile Include="ProcessInfo.cpp">
-      <Filter>Source Files\Service</Filter>
-    </ClCompile>
-    <ClCompile Include="MainController.cpp">
-      <Filter>Source Files\Controller</Filter>
-    </ClCompile>
-    <ClCompile Include="OpenProcessForm.cpp">
-      <Filter>Source Files\View</Filter>
-    </ClCompile>
-    <ClCompile Include="OpenProcessController.cpp">
-      <Filter>Source Files\Controller</Filter>
-    </ClCompile>
-    <ClCompile Include="InformationProcessController.cpp">
-      <Filter>Source Files\Controller</Filter>
-    </ClCompile>
-    <ClCompile Include="InjectShellcodeForm.cpp">
-      <Filter>Source Files\View</Filter>
-    </ClCompile>
-    <ClCompile Include="InjectShellcodeController.cpp">
-      <Filter>Source Files\Controller</Filter>
-    </ClCompile>
-    <ClCompile Include="TextConverter.cpp">
-      <Filter>Source Files\Service</Filter>
-    </ClCompile>
-    <ClCompile Include="Disassembler.cpp">
-      <Filter>Source Files\Disassembler</Filter>
-    </ClCompile>
-    <ClCompile Include="BaseForm.cpp">
-      <Filter>Source Files\View</Filter>
-    </ClCompile>
-    <ClCompile Include="JumpForm.cpp">
-      <Filter>Source Files\View</Filter>
-    </ClCompile>
-    <ClCompile Include="SearchingForm.cpp">
-      <Filter>Source Files\View</Filter>
-    </ClCompile>
-    <ClCompile Include="SearchSignature.cpp">
-      <Filter>Source Files\Service</Filter>
-    </ClCompile>
-    <ClCompile Include="SearchSignatureController.cpp">
-      <Filter>Source Files\Controller</Filter>
-    </ClCompile>
-    <ClCompile Include="InformationForm.cpp">
-      <Filter>Source Files\View</Filter>
-    </ClCompile>
-    <ClCompile Include="InjectShellcode.cpp">
-      <Filter>Source Files\Service</Filter>
-    </ClCompile>
-    <ClCompile Include="ProcessFunction.cpp">
-      <Filter>Source Files\ProcessModel</Filter>
-    </ClCompile>
-    <ClCompile Include="ProcessFunctionDAO.cpp">
-      <Filter>Source Files\ProcessDataAccess</Filter>
-    </ClCompile>
-    <ClCompile Include="RecognizeFunctionForm.cpp">
-      <Filter>Source Files\View</Filter>
-    </ClCompile>
-    <ClCompile Include="RecognizeFunctionController.cpp">
-      <Filter>Source Files\Controller</Filter>
-    </ClCompile>
-    <ClCompile Include="MnemonicsX64.cpp">
-      <Filter>Source Files\Service</Filter>
-    </ClCompile>
-    <ClCompile Include="CallFunctionForm.cpp">
-      <Filter>Source Files\View</Filter>
-    </ClCompile>
-    <ClCompile Include="ProcessFunctionStackFrame.cpp">
-      <Filter>Source Files\ProcessModel</Filter>
-    </ClCompile>
-    <ClCompile Include="CallFunctionController.cpp">
-      <Filter>Source Files\Controller</Filter>
-    </ClCompile>
-    <ClCompile Include="ProcessFunctionConvention.cpp">
-      <Filter>Source Files\ProcessModel</Filter>
-    </ClCompile>
-    <ClCompile Include="ProcessFunctionReturnedValue.cpp">
-      <Filter>Source Files\ProcessModel</Filter>
-    </ClCompile>
-    <ClCompile Include="Assembler.cpp">
-      <Filter>Source Files\Assembler</Filter>
-    </ClCompile>
     <ClCompile Include="lib\src\asmtk\asmparser.cpp">
       <Filter>Source Files\asmtk</Filter>
     </ClCompile>
     <ClCompile Include="lib\src\asmtk\asmtokenizer.cpp">
       <Filter>Source Files\asmtk</Filter>
     </ClCompile>
-    <ClCompile Include="ProcessFunctionCaller.cpp">
-      <Filter>Source Files\ProcessModel</Filter>
-    </ClCompile>
-    <ClCompile Include="AssemblerInstruction.cpp">
+    <ClCompile Include="Assembler\Assembler.cpp">
       <Filter>Source Files\Assembler</Filter>
     </ClCompile>
-    <ClCompile Include="ProcessInstructionReader.cpp">
+    <ClCompile Include="Assembler\AssemblerInstruction.cpp">
+      <Filter>Source Files\Assembler</Filter>
+    </ClCompile>
+    <ClCompile Include="Disassembler\Disassembler.cpp">
+      <Filter>Source Files\Disassembler</Filter>
+    </ClCompile>
+    <ClCompile Include="Controller\CallFunctionController.cpp">
+      <Filter>Source Files\Controller</Filter>
+    </ClCompile>
+    <ClCompile Include="Controller\InformationProcessController.cpp">
+      <Filter>Source Files\Controller</Filter>
+    </ClCompile>
+    <ClCompile Include="Controller\InjectShellcodeController.cpp">
+      <Filter>Source Files\Controller</Filter>
+    </ClCompile>
+    <ClCompile Include="Controller\MainController.cpp">
+      <Filter>Source Files\Controller</Filter>
+    </ClCompile>
+    <ClCompile Include="Controller\OpenProcessController.cpp">
+      <Filter>Source Files\Controller</Filter>
+    </ClCompile>
+    <ClCompile Include="Controller\RecognizeFunctionController.cpp">
+      <Filter>Source Files\Controller</Filter>
+    </ClCompile>
+    <ClCompile Include="Controller\SearchSignatureController.cpp">
+      <Filter>Source Files\Controller</Filter>
+    </ClCompile>
+    <ClCompile Include="ProcessDataAccess\ProcessFunctionDAO.cpp">
       <Filter>Source Files\ProcessDataAccess</Filter>
     </ClCompile>
-    <ClCompile Include="InfoForm.cpp">
+    <ClCompile Include="ProcessDataAccess\ProcessInstructionReader.cpp">
+      <Filter>Source Files\ProcessDataAccess</Filter>
+    </ClCompile>
+    <ClCompile Include="ProcessModel\ProcessFunction.cpp">
+      <Filter>Source Files\ProcessModel</Filter>
+    </ClCompile>
+    <ClCompile Include="ProcessModel\ProcessFunctionCaller.cpp">
+      <Filter>Source Files\ProcessModel</Filter>
+    </ClCompile>
+    <ClCompile Include="ProcessModel\ProcessFunctionConvention.cpp">
+      <Filter>Source Files\ProcessModel</Filter>
+    </ClCompile>
+    <ClCompile Include="ProcessModel\ProcessFunctionReturnedValue.cpp">
+      <Filter>Source Files\ProcessModel</Filter>
+    </ClCompile>
+    <ClCompile Include="ProcessModel\ProcessFunctionStackFrame.cpp">
+      <Filter>Source Files\ProcessModel</Filter>
+    </ClCompile>
+    <ClCompile Include="Service\Injector.cpp">
+      <Filter>Source Files\Service</Filter>
+    </ClCompile>
+    <ClCompile Include="Service\InjectShellcode.cpp">
+      <Filter>Source Files\Service</Filter>
+    </ClCompile>
+    <ClCompile Include="Service\MnemonicsX64.cpp">
+      <Filter>Source Files\Service</Filter>
+    </ClCompile>
+    <ClCompile Include="Service\pe_hdrs_helper.cpp">
+      <Filter>Source Files\Service</Filter>
+    </ClCompile>
+    <ClCompile Include="Service\PEreader.cpp">
+      <Filter>Source Files\Service</Filter>
+    </ClCompile>
+    <ClCompile Include="Service\PEWrite.cpp">
+      <Filter>Source Files\Service</Filter>
+    </ClCompile>
+    <ClCompile Include="Service\ProcessInfo.cpp">
+      <Filter>Source Files\Service</Filter>
+    </ClCompile>
+    <ClCompile Include="Service\SearchSignature.cpp">
+      <Filter>Source Files\Service</Filter>
+    </ClCompile>
+    <ClCompile Include="Service\TextConverter.cpp">
+      <Filter>Source Files\Service</Filter>
+    </ClCompile>
+    <ClCompile Include="Form\SearchingForm.cpp">
+      <Filter>Source Files\View</Filter>
+    </ClCompile>
+    <ClCompile Include="Form\RecognizeFunctionForm.cpp">
+      <Filter>Source Files\View</Filter>
+    </ClCompile>
+    <ClCompile Include="Form\OpenProcessForm.cpp">
+      <Filter>Source Files\View</Filter>
+    </ClCompile>
+    <ClCompile Include="Form\MainForm.cpp">
+      <Filter>Source Files\View</Filter>
+    </ClCompile>
+    <ClCompile Include="Form\JumpForm.cpp">
+      <Filter>Source Files\View</Filter>
+    </ClCompile>
+    <ClCompile Include="Form\InjectShellcodeForm.cpp">
+      <Filter>Source Files\View</Filter>
+    </ClCompile>
+    <ClCompile Include="Form\InformationForm.cpp">
+      <Filter>Source Files\View</Filter>
+    </ClCompile>
+    <ClCompile Include="Form\InfoForm.cpp">
+      <Filter>Source Files\View</Filter>
+    </ClCompile>
+    <ClCompile Include="Form\CallFunctionForm.cpp">
+      <Filter>Source Files\View</Filter>
+    </ClCompile>
+    <ClCompile Include="Form\BaseForm.cpp">
       <Filter>Source Files\View</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="packages.config" />
+    <Image Include="Image1.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
   </ItemGroup>
 </Project>
