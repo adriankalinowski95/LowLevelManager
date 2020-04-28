@@ -1,0 +1,22 @@
+﻿  Injector.cpp
+C:\Users\Adrian\source\repos\LowLevelManager_v1\LowLevelManager_v1\Injector.cpp(43,20): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Adrian\source\repos\LowLevelManager_v1\LowLevelManager_v1\Injector.cpp(64,20): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Adrian\source\repos\LowLevelManager_v1\LowLevelManager_v1\Injector.cpp(74,13): warning C4477: 'printf' : format string '%d' requires an argument of type 'int', but variadic argument 3 has type 'HANDLE'
+  MainController.cpp
+C:\Users\Adrian\source\repos\LowLevelManager_v1\LowLevelManager_v1\Injector.cpp(91,20): warning C4018: '<': signed/unsigned mismatch
+  MainForm.cpp
+  OpenProcessController.cpp
+C:\Users\Adrian\source\repos\LowLevelManager_v1\LowLevelManager_v1\MainController.cpp(22,20): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Adrian\source\repos\LowLevelManager_v1\LowLevelManager_v1\OpenProcessController.cpp(20,21): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Adrian\source\repos\LowLevelManager_v1\LowLevelManager_v1\OpenProcessController.cpp(23,1): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  OpenProcessForm.cpp
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(1774): message : see declaration of 'sprintf'
+  ProcessInfo.cpp
+C:\Users\Adrian\source\repos\LowLevelManager_v1\LowLevelManager_v1\OpenProcessForm.cpp(27,21): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Adrian\source\repos\LowLevelManager_v1\LowLevelManager_v1\ProcessInfo.cpp(131,9): warning C4476: 'printf' : unknown type field character 'P' in format specifier
+C:\Users\Adrian\source\repos\LowLevelManager_v1\LowLevelManager_v1\ProcessInfo.cpp(131,35): warning C4474: 'printf' : too many arguments passed for format string
+  pe_hdrs_helper.cpp
+  Generating Code...
+C:\Users\Adrian\source\repos\LowLevelManager_v1\LowLevelManager_v1\ProcessInfo.cpp(131,35): message : placeholders and their parameters expect 0 variadic arguments, but 1 were provided
+  Injector.obj : MSIL module encountered; incremental linking is disabled for MSIL; performing full link
+  LowLevelManager_v1.vcxproj -> C:\Users\Adrian\source\repos\LowLevelManager_v1\Debug\LowLevelManager_v1.exe

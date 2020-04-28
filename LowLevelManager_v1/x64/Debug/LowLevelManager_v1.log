@@ -1,0 +1,17 @@
+﻿  ProcessFunctionStackFrame.cpp
+C:\Users\Adrian\Desktop\inzynierka\programyTestowe\LowLevelManager\kod\LowLevelManager_v1\ProcessFunctionStackFrame.h(23): warning C4091: 'typedef ': ignored on left of '' when no variable is declared
+C:\Users\Adrian\Desktop\inzynierka\programyTestowe\LowLevelManager\kod\LowLevelManager_v1\MnemonicsX64.h(286): warning C4091: 'typedef ': ignored on left of '' when no variable is declared
+C:\Users\Adrian\Desktop\inzynierka\programyTestowe\LowLevelManager\kod\LowLevelManager_v1\ProcessFunctionStackFrame.cpp(150,60): warning C4244: '=': conversion from 'unsigned __int64' to 'int', possible loss of data
+  Assembler.obj : MSIL module encountered; incremental linking is disabled for MSIL; performing full link
+     Creating library C:\Users\Adrian\Desktop\inzynierka\programyTestowe\LowLevelManager\kod\x64\Debug\LowLevelManager_v1.lib and object C:\Users\Adrian\Desktop\inzynierka\programyTestowe\LowLevelManager\kod\x64\Debug\LowLevelManager_v1.exp
+RecognizeFunctionController.obj : warning LNK4248: unresolved typeref token (01000016) for 'FunctionParamter'; image may not run
+distorm.lib(decoder.obj) : warning LNK4099: PDB 'distorm.pdb' was not found with 'distorm.lib(decoder.obj)' or at 'C:\Users\Adrian\Desktop\inzynierka\programyTestowe\LowLevelManager\kod\x64\Debug\distorm.pdb'; linking object as if no debug info
+distorm.lib(distorm.obj) : warning LNK4099: PDB 'distorm.pdb' was not found with 'distorm.lib(distorm.obj)' or at 'C:\Users\Adrian\Desktop\inzynierka\programyTestowe\LowLevelManager\kod\x64\Debug\distorm.pdb'; linking object as if no debug info
+distorm.lib(instructions.obj) : warning LNK4099: PDB 'distorm.pdb' was not found with 'distorm.lib(instructions.obj)' or at 'C:\Users\Adrian\Desktop\inzynierka\programyTestowe\LowLevelManager\kod\x64\Debug\distorm.pdb'; linking object as if no debug info
+distorm.lib(insts.obj) : warning LNK4099: PDB 'distorm.pdb' was not found with 'distorm.lib(insts.obj)' or at 'C:\Users\Adrian\Desktop\inzynierka\programyTestowe\LowLevelManager\kod\x64\Debug\distorm.pdb'; linking object as if no debug info
+distorm.lib(mnemonics.obj) : warning LNK4099: PDB 'distorm.pdb' was not found with 'distorm.lib(mnemonics.obj)' or at 'C:\Users\Adrian\Desktop\inzynierka\programyTestowe\LowLevelManager\kod\x64\Debug\distorm.pdb'; linking object as if no debug info
+distorm.lib(operands.obj) : warning LNK4099: PDB 'distorm.pdb' was not found with 'distorm.lib(operands.obj)' or at 'C:\Users\Adrian\Desktop\inzynierka\programyTestowe\LowLevelManager\kod\x64\Debug\distorm.pdb'; linking object as if no debug info
+distorm.lib(prefix.obj) : warning LNK4099: PDB 'distorm.pdb' was not found with 'distorm.lib(prefix.obj)' or at 'C:\Users\Adrian\Desktop\inzynierka\programyTestowe\LowLevelManager\kod\x64\Debug\distorm.pdb'; linking object as if no debug info
+distorm.lib(textdefs.obj) : warning LNK4099: PDB 'distorm.pdb' was not found with 'distorm.lib(textdefs.obj)' or at 'C:\Users\Adrian\Desktop\inzynierka\programyTestowe\LowLevelManager\kod\x64\Debug\distorm.pdb'; linking object as if no debug info
+distorm.lib(wstring.obj) : warning LNK4099: PDB 'distorm.pdb' was not found with 'distorm.lib(wstring.obj)' or at 'C:\Users\Adrian\Desktop\inzynierka\programyTestowe\LowLevelManager\kod\x64\Debug\distorm.pdb'; linking object as if no debug info
+  LowLevelManager_v1.vcxproj -> C:\Users\Adrian\Desktop\inzynierka\programyTestowe\LowLevelManager\kod\x64\Debug\LowLevelManager_v1.exe

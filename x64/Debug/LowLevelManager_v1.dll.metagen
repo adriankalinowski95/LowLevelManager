@@ -1,0 +1,111 @@
+  LowLevelManagerv1.CallFunctionForm.resources - Embedded, ContainedInManifestFile, 
+  LowLevelManagerv1.InformationForm.resources - Embedded, ContainedInManifestFile, 
+  LowLevelManagerv1.InjectShellcodeForm.resources - Embedded, ContainedInManifestFile, 
+  LowLevelManagerv1.JumpForm.resources - Embedded, ContainedInManifestFile, 
+  LowLevelManagerv1.MainForm.resources - Embedded, ContainedInManifestFile, 
+  LowLevelManagerv1.OpenProcessForm.resources - Embedded, ContainedInManifestFile, 
+  LowLevelManagerv1.RecognizeFunctionForm.resources - Embedded, ContainedInManifestFile, 
+  LowLevelManagerv1.SearchingForm.resources - Embedded, ContainedInManifestFile, 
+ImageRuntimeVersion: v4.0.30319
+Assembly LowLevelManager_v1, Version=0.0.*, Culture=Invariant Language (Invariant Country): 
+	hash=SHA1, flags=PublicKey
+Assembly mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a: 
+	hash=None, flags=None
+Assembly System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Class LowLevelManagerv1.BaseForm: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(Int32, Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class LowLevelManagerv1.CallFunctionForm: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Boolean isButtonClicked : Public
+    Int32 xButtonClicked : Public
+    Int32 yButtonClicked : Public
+    SByte* functionAddress : Public
+  Methods:
+    loadProcessParameters(): PrivateScope, Public, HideBySig
+    callFunction(): PrivateScope, Public, HideBySig
+    setFunctionAddress(SByte*): PrivateScope, Public, HideBySig
+Class LowLevelManagerv1.InformationForm: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Boolean isButtonClicked : Public
+    Int32 xButtonClicked : Public
+    Int32 yButtonClicked : Public
+  Methods:
+    setMainController(MainController*): PrivateScope, Public, HideBySig
+    loadProcessInformation(): PrivateScope, Public, HideBySig
+Class LowLevelManagerv1.InjectShellcodeForm: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Boolean isButtonClicked : Public
+    Int32 xButtonClicked : Public
+    Int32 yButtonClicked : Public
+  Methods:
+    injectShellcode(): PrivateScope, Public, HideBySig
+Class LowLevelManagerv1.JumpForm: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Boolean isButtonClicked : Public
+    Int32 xButtonClicked : Public
+    LowLevelManagerv1.MainForm mainForm : Public
+    Int32 yButtonClicked : Public
+  Methods:
+    jumpToAddress(): PrivateScope, Public, HideBySig
+    setMainForm(MainForm): PrivateScope, Public, HideBySig
+Class LowLevelManagerv1.OpenProcessForm: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Boolean isButtonClicked : Public
+    Int32 xButtonClicked : Public
+    Int32 yButtonClicked : Public
+  Methods:
+    setMainController(MainController*): PrivateScope, Public, HideBySig
+    loadProcesses(): PrivateScope, Public, HideBySig
+Class LowLevelManagerv1.SearchingForm: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Boolean isButtonClicked : Public
+    Int32 xButtonClicked : Public
+    Int32 yButtonClicked : Public
+Class LowLevelManagerv1.RecognizeFunctionForm: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Boolean isButtonClicked : Public
+    Int32 xButtonClicked : Public
+    Int32 yButtonClicked : Public
+  Methods:
+    loadFunction(): PrivateScope, Public, HideBySig
+    callFunction(): PrivateScope, Public, HideBySig
+Class LowLevelManagerv1.MainForm: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Boolean isButtonClicked : Public
+    Int32 xButtonClicked : Public
+    Int32 yButtonClicked : Public
+  Methods:
+    callbackC(String): PrivateScope, Public, HideBySig
+    getMainController(): PrivateScope, Public, HideBySig
+    loadProcessInstructions(): PrivateScope, Public, HideBySig
+    loadProcessInstructionsByIndex(UInt32 IsLong): PrivateScope, Public, HideBySig
+    setProcessName(SByte*): PrivateScope, Public, HideBySig
+    cleanListView(): PrivateScope, Public, HideBySig
+    jumpToAddress(String): PrivateScope, Public, HideBySig

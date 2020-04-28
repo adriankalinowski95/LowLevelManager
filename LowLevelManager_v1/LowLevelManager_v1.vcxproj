@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\vcpkg.C.vs.vcpkgmaster.1.0.0\build\native\vcpkg.C.vs.vcpkgmaster.props" Condition="Exists('..\packages\vcpkg.C.vs.vcpkgmaster.1.0.0\build\native\vcpkg.C.vs.vcpkgmaster.props')" />
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <ProjectGuid>{FA916D7D-6838-4A16-83A4-81778FC7340B}</ProjectGuid>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <Keyword>ManagedCProj</Keyword>
+    <RootNamespace>LowLevelManagerv1</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CLRSupport>true</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CLRSupport>true</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CLRSupport>true</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CLRSupport>true</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>$(SolutionDir)LowLevelManager_v1\lib\distorm3-3.4.1\src;$(SolutionDir)LowLevelManager_v1\lib\distorm3-3.4.1\include;$(SolutionDir)LowLevelManager_v1\lib\src;$(IncludePath)</IncludePath>
+    <SourcePath>$(SolutionDir)LowLevelManager_v1\lib\src\asmjit;$(SolutionDir)LowLevelManager_v1\lib\distorm3-3.4.1\src;$(SourcePath)</SourcePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies />
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)LowLevelManager_v1\lib\src;$(SolutionDir)LowLevelManager_v1\lib\src\asmjit;$(SolutionDir)LowLevelManager_v1\lib\src\asmtk;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalUsingDirectories>%(AdditionalUsingDirectories)</AdditionalUsingDirectories>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>distorm.lib;asmjit.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <SubSystem>Windows</SubSystem>
+      <EntryPointSymbol>Main</EntryPointSymbol>
+    </Link>
+    <PostBuildEvent>
+      <Command>lib /NOLOGO /OUT:"$(TargetPath).lib" "$(ProjectDir)\$(Configuration)*.obj"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies />
+      <SubSystem>Windows</SubSystem>
+      <EntryPointSymbol>Main</EntryPointSymbol>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies />
+      <EntryPointSymbol>main</EntryPointSymbol>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Assembler.cpp" />
+    <ClCompile Include="AssemblerInstruction.cpp" />
+    <ClCompile Include="BaseForm.cpp" />
+    <ClCompile Include="CallFunctionController.cpp" />
+    <ClCompile Include="CallFunctionForm.cpp" />
+    <ClCompile Include="Disassembler.cpp" />
+    <ClCompile Include="InfoForm.cpp" />
+    <ClCompile Include="InformationForm.cpp" />
+    <ClCompile Include="InformationProcessController.cpp" />
+    <ClCompile Include="Injector.cpp" />
+    <ClCompile Include="InjectShellcode.cpp" />
+    <ClCompile Include="InjectShellcodeController.cpp" />
+    <ClCompile Include="InjectShellcodeForm.cpp" />
+    <ClCompile Include="JumpForm.cpp" />
+    <ClCompile Include="lib\src\asmtk\asmparser.cpp" />
+    <ClCompile Include="lib\src\asmtk\asmtokenizer.cpp" />
+    <ClCompile Include="MainController.cpp" />
+    <ClCompile Include="MainForm.cpp" />
+    <ClCompile Include="MnemonicsX64.cpp" />
+    <ClCompile Include="OpenProcessController.cpp" />
+    <ClCompile Include="OpenProcessForm.cpp" />
+    <ClCompile Include="PEreader.cpp" />
+    <ClCompile Include="PEWrite.cpp" />
+    <ClCompile Include="pe_hdrs_helper.cpp" />
+    <ClCompile Include="ProcessFunction.cpp" />
+    <ClCompile Include="ProcessFunctionCaller.cpp" />
+    <ClCompile Include="ProcessFunctionConvention.cpp" />
+    <ClCompile Include="ProcessFunctionDAO.cpp" />
+    <ClCompile Include="ProcessFunctionReturnedValue.cpp" />
+    <ClCompile Include="ProcessFunctionStackFrame.cpp" />
+    <ClCompile Include="ProcessInfo.cpp" />
+    <ClCompile Include="ProcessInstructionReader.cpp" />
+    <ClCompile Include="RecognizeFunctionController.cpp" />
+    <ClCompile Include="RecognizeFunctionForm.cpp" />
+    <ClCompile Include="SearchingForm.cpp" />
+    <ClCompile Include="SearchSignature.cpp" />
+    <ClCompile Include="SearchSignatureController.cpp" />
+    <ClCompile Include="TextConverter.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Assembler.h" />
+    <ClInclude Include="AssemblerInstruction.h" />
+    <ClInclude Include="BaseForm.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="CallFunctionController.h" />
+    <ClInclude Include="CallFunctionForm.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="Disassembler.h" />
+    <ClInclude Include="InfoForm.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="InformationForm.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="InformationProcessController.h" />
+    <ClInclude Include="Injector.h" />
+    <ClInclude Include="InjectShellcode.h" />
+    <ClInclude Include="InjectShellcodeController.h" />
+    <ClInclude Include="InjectShellcodeForm.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="JumpForm.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="lib\src\asmtk\asmparser.h" />
+    <ClInclude Include="lib\src\asmtk\asmtk.h" />
+    <ClInclude Include="lib\src\asmtk\asmtokenizer.h" />
+    <ClInclude Include="lib\src\asmtk\elfdefs.h" />
+    <ClInclude Include="lib\src\asmtk\globals.h" />
+    <ClInclude Include="lib\src\asmtk\parserutils.h" />
+    <ClInclude Include="lib\src\asmtk\strtod.h" />
+    <ClInclude Include="MainController.h" />
+    <ClInclude Include="MainForm.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="MnemonicsX64.h" />
+    <ClInclude Include="ntddk.h" />
+    <ClInclude Include="OpenProcessController.h" />
+    <ClInclude Include="OpenProcessForm.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="PEreader.h" />
+    <ClInclude Include="PEWrite.h" />
+    <ClInclude Include="pe_hdrs_helper.h" />
+    <ClInclude Include="ProcessFunction.h" />
+    <ClInclude Include="ProcessFunctionCaller.h" />
+    <ClInclude Include="ProcessFunctionConvention.h" />
+    <ClInclude Include="ProcessFunctionDAO.h" />
+    <ClInclude Include="ProcessFunctionReturnedValue.h" />
+    <ClInclude Include="ProcessFunctionStackFrame.h" />
+    <ClInclude Include="ProcessInfo.h" />
+    <ClInclude Include="ProcessInstructionReader.h" />
+    <ClInclude Include="RecognizeFunctionController.h" />
+    <ClInclude Include="RecognizeFunctionForm.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="SearchingForm.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="SearchSignature.h" />
+    <ClInclude Include="SearchSignatureController.h" />
+    <ClInclude Include="TextConverter.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="CallFunctionForm.resx">
+      <DependentUpon>CallFunctionForm.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InfoForm.resx">
+      <DependentUpon>InfoForm.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InformationForm.resx">
+      <DependentUpon>InformationForm.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InjectShellcodeForm.resx">
+      <DependentUpon>InjectShellcodeForm.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="JumpForm.resx">
+      <DependentUpon>JumpForm.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OpenProcessForm.resx">
+      <DependentUpon>OpenProcessForm.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RecognizeFunctionForm.resx">
+      <DependentUpon>RecognizeFunctionForm.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchingForm.resx">
+      <DependentUpon>SearchingForm.h</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+    
+</Project>
