@@ -1,5 +1,5 @@
 ## LowLevelManager
-Program ma za zadanie ułatwienić inżynierie wsteczną procesów. 
+Program ma za zadanie ułatwić inżynierie wsteczną procesów. 
 Program pozwala automatycznie wykrywać parametry funkcji nie poddanych procesom zaciemniania kodu.
 
 ## Funkcjonalności:
