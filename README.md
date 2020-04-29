@@ -23,15 +23,15 @@ Program pozwala automatycznie wykrywać parametry funkcji nie poddanych procesom
 ## Poradnik:
 ```
 Wywoływanie funkcji:
-	1. Zbuduj aplikacje.
-	2. Odpal aplikacje w trybie administratora.
-	3. Wybierz proces - OpenProcess.
-	4. Klinkij Recognize Function.
-	5. Podaj adres w postaci szesnastkowej. 
-	6. Kliknij recognize.
-	7. Wybierz call function.
-	8. Podaj parametry w rubryce value.
-	9. Wcisnij call function.
+1. Zbuduj aplikacje.
+2. Odpal aplikacje w trybie administratora.
+3. Wybierz proces - OpenProcess.
+4. Klinkij Recognize Function.
+5. Podaj adres w postaci szesnastkowej. 
+6. Kliknij recognize.
+7. Wybierz call function.
+8. Podaj parametry w rubryce value.
+9. Wcisnij call function.
 ```
 
 
