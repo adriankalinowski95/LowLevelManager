@@ -20,6 +20,10 @@ Program pozwala automatycznie wykrywać parametry funkcji nie poddanych procesom
 * [ASMJIT][asmjit]
 * [DISTORM][distorm]
 
+## Środowisko:
+Microsoft Visual Studio Community 2019
+
+
 ## Poradnik:
 ```
 Wywoływanie funkcji:
